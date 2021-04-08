@@ -1,0 +1,32 @@
+//- add-image.jade
+html
+    head
+        title Add Image
+        link(rel="stylesheet",href="style.css",type="text/css")
+    body
+        div.container
+            div.top-menu
+                h1.page-heading Add Image
+                ul
+                    li
+                        a(href='/add-image') Add Image
+            div.page-content
+                p.page-description We are adding image
+                hr
+                //- Change in Form Type
+                form(action='/add-image',method='post',enctype="multipart/form-data")
+                    table(cellpadding="10",cellspacing="10")
+                        //- Add Image File Start
+                        tr
+                            td
+                                label(for="file") Select Image
+                            td
+                                input(type="file",name="image")
+                            //- Image File End
+                            td
+                                label(for="file") Name
+                            td
+                                input(type="text",name="isaac")
+                        tr
+                            td(colspan="2",align="right")
+                                input(type="submit")

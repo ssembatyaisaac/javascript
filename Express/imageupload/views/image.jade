@@ -1,0 +1,16 @@
+//- Show Image.jade
+html
+    head
+        title Show Image
+        link(rel="stylesheet",href="/style.css",type="text/css")
+    body
+        div.container
+            div.top-menu
+                h1.page-heading Image
+                ul
+                    li
+                        a(href='/') Add Image
+            div.page-content
+                p.page-description Show Image
+                p.image-show
+                    img(src='/uploads/'+imgUrl)
